@@ -1,0 +1,13 @@
+submit sleep 5s
+submit sleep 10s
+submit mkdir alpha
+submit mkdir a b c
+submit echo "Hello world!"
+submit echo "This is message"
+submit echo "This is another message!!!!"
+submit echo "message content"
+submit echo "foo"
+submit echo "boo"
+submit echo This message needs to be printed
+submit mkdir
+shutdown

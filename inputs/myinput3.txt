@@ -1,0 +1,57 @@
+submit sleep 5s
+submit sleep 10s
+submit mkdir alpha
+submit mkdir a b c
+show-active
+submit echo "Hello world!"
+submit echo "This is at stderr" >>/dev/stderr
+submit echo "This is at stdout" >>/dev/stdout
+submit sleep 30s
+suspend 2
+suspend 8
+submit mkdir cece
+resume 8
+resume 2
+show-pools
+submit echo "message content" >&2
+submit echo "foo" 1>&2
+show-active
+show-finished
+submit echo "errrrrrrrrrr" > /dev/null
+submit echo This message >&2 goes to stderr
+show-finished
+submit mkdir
+submit /bin/mkdir bindir
+submit sleep 120s
+status-all
+status-all 20
+submit sleep 5s
+submit sleep 10s
+submit mkdir alpha2
+submit mkdir a2 b2 c2
+show-active
+submit echo "Hello world!"
+submit echo "This is message"
+submit echo "This is another message!!!!"
+submit sleep 30s
+suspend 10
+suspend 11
+submit mkdir cece
+resume 11
+resume 10
+show-pools
+submit echo "message content"
+submit echo "foo"
+show-active
+show-finished
+submit echo "boo"
+submit echo This message needs to be printed
+show-finished
+submit mkdir
+submit /bin/mkdir bindir2
+submit sleep 120s
+status-all
+submit sleep 240s
+suspend 33
+status-all 1
+shutdown

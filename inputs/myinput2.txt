@@ -1,0 +1,22 @@
+submit sleep 5s
+submit sleep 10s
+submit mkdir alpha
+submit mkdir a b c
+show-active
+submit echo "Hello world!"
+submit echo "This is message"
+submit echo "This is another message!!!!"
+submit sleep 30s
+suspend 2
+suspend 8
+submit mkdir cece
+resume 8
+resume 2
+show-pools
+submit echo "message content"
+submit echo "foo"
+submit echo "boo"
+submit echo This message needs to be printed
+show-finished
+submit mkdir
+shutdown
