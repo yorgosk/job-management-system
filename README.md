@@ -1,10 +1,10 @@
+# Project: Project2 - Job Management System (JMS)
+
+Project Developer: Georgios Kamaras - sdi1400058
+
 Course: K24 Systems Programming, Spring 2017
 
 Date: 26/04/2017
-
-Project: Project2 - Job Management System (JMS)
-
-Project Developer: Georgios Kamaras - sdi1400058
 
 Development Platform:
 *	GNU/Linux Ubuntu 16.04
@@ -34,18 +34,18 @@ Included Files:
 *	(and README)
 
 Compilation:
-	use "make" command
+	use ```make``` command
 
 Cleaning:
-	use "make clean" command
+	use ```make clean``` command
 
 Usage:
-*	(1) First, use "./jms_coord <desired-flags>" command to run the JMS's coordinator
-	e.g. "./jms_coord -l mypath -n 3 -w jms_out -r jms_in",
-*	(2) then, use "./jms_console <desire-flag>" command to run the JMS's console
-	e.g. "./jms_console -r jms_out -w jms_in -o inputs/myinput2.txt".
-*	At any time, use "./jms_script" command to interact with the results of the instructions passed to JMS
-	e.g. "./jms_script.sh -l path -c purge" (making the file executable using chmod may be needed first)
+*	(1) First, use ```./jms_coord <desired-flags>``` command to run the JMS's coordinator
+	e.g. ```./jms_coord -l mypath -n 3 -w jms_out -r jms_in```,
+*	(2) then, use ```./jms_console <desire-flag>``` command to run the JMS's console
+	e.g. ```./jms_console -r jms_out -w jms_in -o inputs/myinput2.txt```.
+*	At any time, use ```./jms_script``` command to interact with the results of the instructions passed to JMS
+	e.g. ```./jms_script.sh -l path -c purge``` (making the file executable using chmod may be needed first)
 
 Technical Details:
 *	For my implementation I followed all of the exercise's specifications both in paper and on Piazza.
@@ -105,7 +105,7 @@ Appendix I - Protocols:
 	messages the console to wait a "batch-response" and the console enters a loop-mode where it prints
 	whatever it reads from the coordinator. When the answer is over, the coordinator messages the console
 	regarding the end of the "batch-response", and the console can ask the user to enter his next command.
-	
+
 *	Coordinator-Pool Communication Protocol (jms.coordpool.pipes)
 	1) Hand-shake: when the coordinator creates a new child-pool he enters a hand-shake process in which
 	he waits for a pool (the just-created-pool) to establish a "good" (defined roles and message priority)
