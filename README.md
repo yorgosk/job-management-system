@@ -6,7 +6,7 @@ Course: K24 Systems Programming, Spring 2017
 
 Date: 26/04/2017
 
-## Development Platform
+Development Platform:
 *	GNU/Linux Ubuntu 16.04
 *	gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4)
 
