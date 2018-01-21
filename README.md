@@ -6,11 +6,11 @@ Course: K24 Systems Programming, Spring 2017
 
 Date: 26/04/2017
 
-Development Platform:
+## Development Platform
 *	GNU/Linux Ubuntu 16.04
 *	gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.4)
 
-Included Files:
+## Included Files
 *	makefile
 *	console_header.h (my console's main library-file, links all of the console program's modules
 						together)
@@ -33,13 +33,13 @@ Included Files:
 					processes and their results)
 *	(and README)
 
-Compilation:
-	use ```make``` command
+## Compilation
+Use ```make``` command
 
-Cleaning:
-	use ```make clean``` command
+## Cleaning
+Use ```make clean``` command
 
-Usage:
+## Usage
 *	(1) First, use ```./jms_coord <desired-flags>``` command to run the JMS's coordinator
 	e.g. ```./jms_coord -l mypath -n 3 -w jms_out -r jms_in```,
 *	(2) then, use ```./jms_console <desire-flag>``` command to run the JMS's console
@@ -47,7 +47,7 @@ Usage:
 *	At any time, use ```./jms_script``` command to interact with the results of the instructions passed to JMS
 	e.g. ```./jms_script.sh -l path -c purge``` (making the file executable using chmod may be needed first)
 
-Technical Details:
+## Technical Details
 *	For my implementation I followed all of the exercise's specifications both in paper and on Piazza.
 	My goal was to develop a Job Management System (JMS) able to manage a large amount of jobs and grant
 	access to all the essential information about their execution at any time, all that in an efficient
@@ -88,7 +88,7 @@ Technical Details:
 	WARNING: Obviously, the user has to be very careful with the <path> in which he applies the "purge"
 			command, as it's results are irreversible.
 
-Appendix I - Protocols:
+## Appendix I - Protocols
 *	Console-Coordinator Communication Protocol (jms.consocoord.pipes)
 	1) Hand-shake: when the coordinator begins running he enters a hand-shake process in which he waits
 	for a console to establish a "good" (defined roles and message priority) connection with him. Likewise,
@@ -123,7 +123,7 @@ Appendix I - Protocols:
 	which I implement these functionality, and the speed that it guarantees, I didn't considered necessary to
 	do something more complicated.
 
-Appendix II - External Sources:
+## Appendix II - External Sources
 *	For the creation of a date-time string for the pools' children-jobs results, I consulted the links:
 	http://stackoverflow.com/questions/10917491/building-a-date-string-in-c and
 	https://linux.die.net/man/3/strftime
@@ -131,4 +131,5 @@ Appendix II - External Sources:
 	http://stackoverflow.com/questions/2605130/redirecting-exec-output-to-a-buffer-or-file
 
 
-Contact - feedback: sdi1400058@di.uoa.gr
+## Contact - feedback
+Georgios Kamaras: sdi1400058@di.uoa.gr
